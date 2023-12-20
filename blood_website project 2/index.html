@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank & Organ Transplant System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="javascript.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+         
+        <nav>
+           <label class="label">Blood Bank & Organ Transplant System</label>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="donor.html">Donor</a></li>
+                    <li><a href="Admin.html">Admin</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+
+
+                </ul>
+
+
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box" id="home">
+            <h1 >"Donating is a choice, a healthy one"</h1>
+            <p>Organ and Blood donation is a gift of life to the ones in need.Blood brings oxygen and nutrients to all the parts of
+                 the body so they can keep working.Humans can't live without blood. </p>
+                 <a href="action" class="hero-btn">Visit To Know More</a>
+        </div>
+
+
+    </section>
+    <!--script----------------------------------------------------->
+    <script>
+
+        var navLinks= document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right="0";
+        }
+        function hidemenu(){
+            navLinks.style.right="-200px";
+        }
+
+
+    </script>
+
+    <!------------------------------------------------About us--------------------------------------------------------->
+    <section class="About" id="about">
+        <h1 class="head1"><b>About Us</b></h1>
+        <p class="p1"><b>we are an autonomous organization closely working in accordance with the government of India and the health institutes to build a robust infrasturcture.
+            We are working towards solving the realtime problems and to ease the process of blood doantion, organ donation and providing vital information to hospitals and individuals in need at crucial times.We are maintaining a list of recipeients based on precedence of their situation and need. 
+            The list is maintained purely on the basis of the guidelines issued by the Indian Medical Association.
+            This website is not connected to any agent. 
+            Our work is to solely provide the information.</b></p>
+            <p class="p2">*******************************</p>
+    </section>
+
+
+    <!-----------------------------------------------About blood and organ---------------------------------------------->
+
+    <section class="blood" id="about">
+        <h1 class="head2">Blood Groups</h1>
+        <p class="p3"><b>Blood types are determined by the presence or absence of certain antigens – substances that can trigger an immune response <br> if they are foreign to the body.  Since some antigens can trigger a patient's immune system <br>to attack the transfused blood, safe blood transfusions depend on careful blood typing and cross-matching.</b> </p>
+        <div class="row">
+            <div class="blood-col">
+                <h2> Group A</h2>
+                <p class="p3"> Group 'A' has A antigens on the red blood cells with anti-B antibodies in the plasma</p>
+
+            </div>
+            <div class="blood-col">
+                <h2> Group B</h2>
+                <p class="p3"> Group 'B'has B antigens with anti-A antibodies in the plasma</p>
+
+            </div>
+            <div class="blood-col">
+                <h2> Group O</h2>
+                <p class="p3"> Group 'O'  has no antigens, but both anti-A and anti-B antibodies in the plasma</p>
+
+            </div>
+            <div class="blood-col">
+                <h2> Group AB</h2>
+                <p class="p3"> Group 'AB' has both A and B antigens, but no antibodies</p>
+
+            </div>
+            
+            
+            
+            
+        </div>
+        <p class="p4">*************************</p>
+
+    </section>
+
+   
+    
+   
+</body>
+</html> 
